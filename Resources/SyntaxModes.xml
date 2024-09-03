@@ -1,0 +1,17 @@
+<SyntaxModes version="1.0">	
+	<Mode file       = "TSql-Mode.xshd"
+		  name       = "TSql"
+		  extensions = ".sql"/>
+	<Mode file       = "MySql-Mode.xshd"
+		  name       = "MySql"
+		  extensions = ".sql"/>
+	<Mode file       = "PlSql-Mode.xshd"
+		  name       = "PlSql"
+		  extensions = ".sql"/>
+	<Mode file       = "PostgreSql-Mode.xshd"
+		  name       = "PostgreSql"
+		  extensions = ".sql"/>
+	<Mode file       = "SqliteSql-Mode.xshd"
+		  name       = "SqliteSql"
+		  extensions = ".sql"/>
+</SyntaxModes>

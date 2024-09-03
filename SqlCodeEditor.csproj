@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Document\HighlightingStrategy\SyntaxModes\ResourceSyntaxModeProviderEx.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Function.png" />
+    <None Remove="Resources\Function_Trigger.png" />
+    <None Remove="Resources\Keyword.png" />
+    <None Remove="Resources\Mode.xsd" />
+    <None Remove="Resources\MySql-Mode.xshd" />
+    <None Remove="Resources\PlSql-Mode.xshd" />
+    <None Remove="Resources\PostgreSql-Mode.xshd" />
+    <None Remove="Resources\Schema.png" />
+    <None Remove="Resources\SqliteSql-Mode.xshd" />
+    <None Remove="Resources\SyntaxModes.xml" />
+    <None Remove="Resources\Table.png" />
+    <None Remove="Resources\TableColumn.png" />
+    <None Remove="Resources\TextEditorControl.bmp" />
+    <None Remove="Resources\TSql-Mode.xshd" />
+    <None Remove="Resources\View.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Function.png" />
+    <EmbeddedResource Include="Resources\Function_Trigger.png" />
+    <EmbeddedResource Include="Resources\Keyword.png" />
+    <EmbeddedResource Include="Resources\Mode.xsd" />
+    <EmbeddedResource Include="Resources\PlSql-Mode.xshd" />
+    <EmbeddedResource Include="Resources\SqliteSql-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Schema.png" />
+    <EmbeddedResource Include="Resources\Table.png" />
+    <EmbeddedResource Include="Resources\TableColumn.png" />
+    <EmbeddedResource Include="Resources\TextEditorControl.bmp" />
+    <EmbeddedResource Include="Resources\MySql-Mode.xshd" />
+    <EmbeddedResource Include="Resources\PostgreSql-Mode.xshd" />
+    <EmbeddedResource Include="Resources\TSql-Mode.xshd" />
+    <EmbeddedResource Include="Resources\SyntaxModes.xml" />
+    <EmbeddedResource Include="Resources\View.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+</Project>
