@@ -137,7 +137,7 @@
 				<Key word="CURSOR" />
 				<Key word="DATABASE" />
 				<Key word="DBCC" />
-				<Key word="DEALLOCAT" />
+				<Key word="DEALLOCATE" />
 				<Key word="DECLARE" />
 				<Key word="DEFAULT" />
 				<Key word="DESC" />
