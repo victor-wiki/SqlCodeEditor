@@ -174,8 +174,7 @@
 				<Key word="CONSTRAINT_SCHEMA" />
 				<Key word="CONTAINS" />
 				<Key word="CONTEXT" />
-				<Key word="CONTINUE" />
-				<Key word="CONVERT" />
+				<Key word="CONTINUE" />				
 				<Key word="CPU" />
 				<Key word="CROSS" />
 				<Key word="CUBE" />

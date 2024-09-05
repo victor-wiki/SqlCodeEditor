@@ -221,8 +221,7 @@
 				<Key word="CONTENT" />
 				<Key word="CONTINUE" />
 				<Key word="CONTROL" />
-				<Key word="CONVERSION" />
-				<Key word="CONVERT" />
+				<Key word="CONVERSION" />				
 				<Key word="COPY" />
 				<Key word="CORR" />
 				<Key word="CORRESPONDING" />
@@ -932,6 +931,7 @@
 				<Key word="COALESCE" />
 				<Key word="CONCAT" />
 				<Key word="CONCAT_WS" />
+				<Key word="CONVERT" />
 				<Key word="COS" />
 				<Key word="COSD" />
 				<Key word="COT" />

@@ -130,8 +130,7 @@
 				<Key word="CURRENT_DATE" />
 				<Key word="CURRENT_TIME" />
 				<Key word="CURRENT_TIMESTAMP" />
-				<Key word="CURRENT_USER" />
-				<Key word="CONVERT" />
+				<Key word="CURRENT_USER" />			
 				<Key word="CROSS" />
 				<Key word="CURRENT" />
 				<Key word="CURSOR" />
@@ -273,6 +272,7 @@
 				<Key word="CHOOSE" />
 				<Key word="CONCAT" />
 				<Key word="CONCAT_WS" />
+				<Key word="CONVERT" />
 				<Key word="COS" />
 				<Key word="COT" />
 				<Key word="COUNT" />

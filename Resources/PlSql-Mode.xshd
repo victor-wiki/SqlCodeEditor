@@ -143,8 +143,7 @@
 				<Key word="CONNECT" />
 				<Key word="CONSTANT" />
 				<Key word="CONSTRUCTOR" />
-				<Key word="CONTEXT" />
-				<Key word="CONVERT" />
+				<Key word="CONTEXT" />			
 				<Key word="COUNT" />
 				<Key word="CRASH" />
 				<Key word="CROSS" />
@@ -430,6 +429,7 @@
 				<Key word="COALESCE" />
 				<Key word="COMPOSE" />
 				<Key word="CONCAT" />
+				<Key word="CONVERT" />
 				<Key word="CORR" />
 				<Key word="COS" />
 				<Key word="COSH" />
