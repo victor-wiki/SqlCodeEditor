@@ -133,7 +133,7 @@ namespace SqlCodeEditor.Document
 		
 		public IHighlightingStrategy FindHighlighter(string name)
 		{
-			object def = highlightingDefs[name];
+			object def = string.IsNullOrEmpty(name) ? null : highlightingDefs[name];
 			if (def is DictionaryEntry) {
 				return LoadDefinition((DictionaryEntry)def);
 			}

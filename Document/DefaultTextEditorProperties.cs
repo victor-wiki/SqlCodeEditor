@@ -49,9 +49,9 @@ namespace SqlCodeEditor.Document
 		bool        showInvalidLines    = false;
 		
 		bool        isIconBarVisible    = false;
-		bool        enableFolding       = true;
+		bool        enableFolding       = false;
 		bool        showHorizontalRuler = false;
-		bool        showVerticalRuler   = true;
+		bool        showVerticalRuler   = false;
 		bool        convertTabsToSpaces = false;
 		System.Drawing.Text.TextRenderingHint textRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
 		bool        mouseWheelScrollDown = true;

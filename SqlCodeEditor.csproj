@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
+    <Version>1.0.2</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
     <Description>sql syntax highlighting</Description>
@@ -15,7 +15,7 @@
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
     <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
-    <PackageReleaseNotes>"DEALLOCAT" should be "DEALLOCAT"</PackageReleaseNotes>
+    <PackageReleaseNotes>change default values of some properties.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

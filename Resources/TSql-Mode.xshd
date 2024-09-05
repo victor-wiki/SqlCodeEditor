@@ -187,6 +187,7 @@
 				<Key word="LOAD" />
 				<Key word="NATIONAL" />
 				<Key word="NOCHECK" />
+				<key word="NOCOUNT" />
 				<Key word="NONCLUSTERED" />
 				<Key word="NOT" />
 				<Key word="NULL" />
