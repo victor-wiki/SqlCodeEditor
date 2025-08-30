@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.4</AssemblyVersion>
-    <FileVersion>1.0.4</FileVersion>
-    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.5</AssemblyVersion>
+    <FileVersion>1.0.5</FileVersion>
+    <Version>1.0.5</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
     <Description>sql syntax highlighting</Description>
@@ -15,7 +15,7 @@
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
     <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
-    <PackageReleaseNotes>move "CONVERT" to function keywords.</PackageReleaseNotes>
+    <PackageReleaseNotes>ICompletionData: add "TokenType" and "DatabaseObject".</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

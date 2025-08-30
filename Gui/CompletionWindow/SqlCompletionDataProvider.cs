@@ -72,7 +72,7 @@ namespace SqlCodeEditor.Gui.CompletionWindow
                     case SqlWordTokenType.Schema: imageIndex = 5; break;
                 }
 
-                datas[i] = new DefaultCompletionData(tokens[i].Text, imageIndex);
+                datas[i] = new DefaultCompletionData(tokens[i].Text, imageIndex, tokens[i].Type, tokens[i].DatabaseObject );
             }
 
             return datas;

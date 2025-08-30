@@ -6,6 +6,7 @@
         public int StartIndex { get; set; }
         public int StopIndex { get; set; }
         public string Text { get; set; }
+        public object DatabaseObject { get; set; }
     }
 
 
