@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.5</AssemblyVersion>
-    <FileVersion>1.0.5</FileVersion>
-    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.6</AssemblyVersion>
+    <FileVersion>1.0.6</FileVersion>
+    <Version>1.0.6</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
     <Description>sql syntax highlighting</Description>
@@ -15,7 +15,7 @@
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
     <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
-    <PackageReleaseNotes>ICompletionData: add "TokenType" and "DatabaseObject".</PackageReleaseNotes>
+    <PackageReleaseNotes>Change color from "Red" to "Blue" for "DestructiveKeywords".</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

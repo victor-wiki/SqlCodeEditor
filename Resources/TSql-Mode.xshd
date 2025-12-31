@@ -73,7 +73,7 @@
 			<KeyWords name="DestructiveKeywords"
 					  bold="true"
 					  italic="false"
-					  color="Red">
+					  color="Blue">
 				<Key word="DROP" />
 				<Key word="DELETE" />
 				<Key word="TRUNCATE" />
