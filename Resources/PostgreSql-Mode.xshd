@@ -970,6 +970,7 @@
 				<Key word="POSITION" />
 				<Key word="POWER" />
 				<Key word="RADIANS" />
+				<Key word="RANDOM" />
 				<Key word="REPEAT" />
 				<Key word="REPLACE" />
 				<Key word="REVERSE" />
