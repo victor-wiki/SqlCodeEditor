@@ -143,8 +143,7 @@
 				<Key word="CONNECT" />
 				<Key word="CONSTANT" />
 				<Key word="CONSTRUCTOR" />
-				<Key word="CONTEXT" />			
-				<Key word="COUNT" />
+				<Key word="CONTEXT" />				
 				<Key word="CRASH" />
 				<Key word="CROSS" />
 				<Key word="CURRENT" />
@@ -234,12 +233,10 @@
 				<Key word="LOCK" />
 				<Key word="LONG" />
 				<Key word="LOOP" />
-				<Key word="MAP" />
-				<Key word="MAX" />
+				<Key word="MAP" />				
 				<Key word="MAXLEN" />
 				<Key word="MEMBER" />
-				<Key word="MERGE" />
-				<Key word="MIN" />
+				<Key word="MERGE" />				
 				<Key word="MINUS" />
 				<Key word="MINUTE" />
 				<Key word="MOD" />
@@ -348,8 +345,7 @@
 				<Key word="SQLSTATE" />
 				<Key word="STANDARD" />
 				<Key word="START" />
-				<Key word="STATIC" />
-				<Key word="STDDEV" />
+				<Key word="STATIC" />				
 				<Key word="STORED" />
 				<Key word="STRING" />
 				<Key word="STRUCT" />
@@ -357,8 +353,7 @@
 				<Key word="SUBMULTISET" />
 				<Key word="SUBPARTITION" />
 				<Key word="SUBSTITUTABLE" />
-				<Key word="SUBTYPE" />
-				<Key word="SUM" />
+				<Key word="SUBTYPE" />				
 				<Key word="SYNONYM" />
 				<Key word="TABAUTH" />
 				<Key word="TABLE" />
@@ -433,6 +428,7 @@
 				<Key word="CORR" />
 				<Key word="COS" />
 				<Key word="COSH" />
+				<Key word="COUNT" />
 				<Key word="COVAR_POP" />
 				<Key word="COVAR_SAMP" />
 				<Key word="CUME_DIST" />
@@ -475,6 +471,8 @@
 				<Key word="LOWER" />
 				<Key word="LPAD" />
 				<Key word="LTRIM" />
+				<Key word="MAX" />
+				<Key word="MIN" />
 				<Key word="MEDIAN" />
 				<Key word="MONTHS_BETWEEN" />
 				<Key word="NANVL" />
@@ -506,7 +504,11 @@
 				<Key word="SINH" />
 				<Key word="SOUNDEX" />
 				<Key word="SQRT" />
+				<Key word="STDDEV" />
+				<Key word="STDDEV_POP" />
+				<Key word="STDDEV_SAMP" />
 				<Key word="SUBSTR" />
+				<Key word="SUM" />
 				<Key word="SYS_CONTEXT" />
 				<Key word="SYS_EXTRACT_UTC" />
 				<Key word="SYS_GUID" />

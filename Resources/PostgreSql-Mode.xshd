@@ -132,8 +132,7 @@
 				<Key word="ATTACH" />
 				<Key word="ATTRIBUTE" />
 				<Key word="ATTRIBUTES" />
-				<Key word="AUTHORIZATION" />
-				<Key word="AVG" />
+				<Key word="AUTHORIZATION" />				
 				<Key word="BACKWARD" />
 				<Key word="BASE64" />
 				<Key word="BEFORE" />
@@ -227,8 +226,7 @@
 				<Key word="CORRESPONDING" />
 				<Key word="COS" />
 				<Key word="COSH" />
-				<Key word="COST" />
-				<Key word="COUNT" />
+				<Key word="COST" />				
 				<Key word="COVAR_POP" />
 				<Key word="COVAR_SAMP" />
 				<Key word="CREATE" />
@@ -490,8 +488,7 @@
 				<Key word="MATCH_RECOGNIZE" />
 				<Key word="MATCHED" />
 				<Key word="MATCHES" />
-				<Key word="MATERIALIZED" />
-				<Key word="MAX" />
+				<Key word="MATERIALIZED" />			
 				<Key word="MAXVALUE" />
 				<Key word="MEASURES" />
 				<Key word="MEMBER" />
@@ -499,8 +496,7 @@
 				<Key word="MESSAGE_LENGTH" />
 				<Key word="MESSAGE_OCTET_LENGTH" />
 				<Key word="MESSAGE_TEXT" />
-				<Key word="METHOD" />
-				<Key word="MIN" />
+				<Key word="METHOD" />			
 				<Key word="MINUTE" />
 				<Key word="MINVALUE" />
 				<Key word="MOD" />
@@ -750,9 +746,7 @@
 				<Key word="STATE" />
 				<Key word="STATEMENT" />
 				<Key word="STATIC" />
-				<Key word="STATISTICS" />
-				<Key word="STDDEV_POP" />
-				<Key word="STDDEV_SAMP" />
+				<Key word="STATISTICS" />				
 				<Key word="STDIN" />
 				<Key word="STDOUT" />
 				<Key word="STORAGE" />
@@ -768,8 +762,7 @@
 				<Key word="SUBSET" />
 				<Key word="SUBSTRING" />
 				<Key word="SUBSTRING_REGEX" />
-				<Key word="SUCCEEDS" />
-				<Key word="SUM" />
+				<Key word="SUCCEEDS" />				
 				<Key word="SUPPORT" />
 				<Key word="SYMMETRIC" />
 				<Key word="SYSID" />
@@ -855,9 +848,7 @@
 				<Key word="VALIDATOR" />
 				<Key word="VALUE" />
 				<Key word="VALUE_OF" />
-				<Key word="VALUES" />
-				<Key word="VAR_POP" />
-				<Key word="VAR_SAMP" />
+				<Key word="VALUES" />				
 				<Key word="VARBINARY" />
 				<Key word="VARCHAR" />
 				<Key word="VARIADIC" />
@@ -920,6 +911,7 @@
 				<Key word="ATAN" />
 				<Key word="ATAN2" />
 				<Key word="ATAN2D" />
+				<Key word="AVG" />
 				<Key word="BTRIM" />
 				<Key word="CAST" />
 				<Key word="CBRT" />
@@ -936,6 +928,7 @@
 				<Key word="COSD" />
 				<Key word="COT" />
 				<Key word="COTD" />
+				<Key word="COUNT" />
 				<Key word="CURRENT_DATABASE" />
 				<Key word="CURRENT_SCHEMA" />
 				<Key word="CURRENT_TIMESTAMP" />
@@ -960,6 +953,8 @@
 				<Key word="LOWER" />
 				<Key word="LPAD" />
 				<Key word="LTRIM" />
+				<Key word="MAX" />
+				<Key word="MIN" />
 				<Key word="MD5" />
 				<Key word="MIN_SCALE" />
 				<Key word="MOD" />
@@ -985,9 +980,13 @@
 				<Key word="SIND" />
 				<Key word="SQRT" />
 				<Key word="STARTS_WITH" />
+				<Key word="STDDEV" />
+				<Key word="STDDEV_POP" />
+				<Key word="STDDEV_SAMP" />
 				<Key word="STRPOS" />
 				<Key word="SUBSTR" />
 				<Key word="SUBSTRING" />
+				<Key word="SUM" />
 				<Key word="TAN" />
 				<Key word="TAND" />
 				<Key word="TO_CHAR" />
@@ -998,6 +997,8 @@
 				<Key word="TRIM_SCALE" />
 				<Key word="TRUNC" />
 				<Key word="UPPER" />
+				<Key word="VAR_POP" />
+				<Key word="VAR_SAMP" />
 			</KeyWords>
 			<KeyWords name="SqlDataTypes"
 				  bold="false"

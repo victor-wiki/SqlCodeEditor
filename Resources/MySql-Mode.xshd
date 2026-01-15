@@ -741,6 +741,7 @@
 				<Key word="FLOOR" />
 				<Key word="FROM_DAYS" />
 				<Key word="GREATEST" />
+				<Key word="GROUP_CONCAT"/>
 				<Key word="IFNULL" />
 				<Key word="INSTR" />
 				<Key word="ISNULL" />
@@ -784,7 +785,10 @@
 				<Key word="SIN" />
 				<Key word="SPACE" />
 				<Key word="SQRT" />
+				<Key word="STD" />
 				<Key word="STDDEV" />
+				<Key word="‌STDDEV_POP‌‌" />
+				<Key word="‌STDDEV_SAMP‌‌" />
 				<Key word="STR_TO_DATE" />
 				<Key word="STRCMP" />
 				<Key word="SUBDATE" />
@@ -804,6 +808,8 @@
 				<Key word="UCASE" />
 				<Key word="UPPER" />
 				<Key word="UUID" />
+				<Key word="VAR_POP" />
+				<Key word="VAR_SAMP" />
 				<Key word="VERSION" />
 				<Key word="WEEKDAY" />
 				<Key word="WEEKOFYEAR" />

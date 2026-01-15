@@ -224,6 +224,7 @@
 				<Key word="CHANGES" />
 				<Key word="CHAR" />
 				<Key word="COALESCE" />
+				<Key word="COUNT" />
 				<Key word="DATE" />
 				<Key word="DATETIME" />
 				<Key word="FORMAT" />
