@@ -196,6 +196,7 @@
 				<Key word="HAVING" />
 				<Key word="HEAP" />
 				<Key word="HIDDEN" />
+				<Key word="HIGH" />
 				<Key word="HOUR" />
 				<Key word="IDENTIFIED" />
 				<Key word="IF" />
@@ -223,6 +224,7 @@
 				<Key word="LARGE" />
 				<Key word="LEADING" />
 				<Key word="LENGTH" />
+				<Key word="LESS" />
 				<Key word="LEVEL" />
 				<Key word="LIBRARY" />
 				<Key word="LIKE2" />
@@ -357,7 +359,9 @@
 				<Key word="SYNONYM" />
 				<Key word="TABAUTH" />
 				<Key word="TABLE" />
+				<Key word="TABLESPACE" />
 				<Key word="TDO" />
+				<Key word="THAN" />
 				<Key word="THE" />
 				<Key word="THEN" />
 				<Key word="TIME" />

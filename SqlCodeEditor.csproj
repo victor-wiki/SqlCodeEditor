@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.8</AssemblyVersion>
-    <FileVersion>1.0.8</FileVersion>
-    <Version>1.0.8</Version>
+    <AssemblyVersion>1.0.9</AssemblyVersion>
+    <FileVersion>1.0.9</FileVersion>
+    <Version>1.0.9</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
     <Description>sql syntax highlighting</Description>
@@ -15,7 +15,7 @@
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
     <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
-    <PackageReleaseNotes>Rearrange aggregate function.</PackageReleaseNotes>
+    <PackageReleaseNotes>Add more keywords.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

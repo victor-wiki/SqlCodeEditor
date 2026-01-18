@@ -201,10 +201,11 @@
 				<Key word="OPENXML" />
 				<Key word="OPTION" />
 				<Key word="ORDER" />
-				<Key word="OVER" />
-				<Key word="PRECISION" />
+				<Key word="OVER" />			
 				<Key word="PERCENT" />
+				<Key word="PERSISTED" />				
 				<Key word="PLAN" />
+			    <Key word="PRECISION" />
 				<Key word="PRIMARY" />
 				<Key word="PRINT" />
 				<Key word="PROC" />
