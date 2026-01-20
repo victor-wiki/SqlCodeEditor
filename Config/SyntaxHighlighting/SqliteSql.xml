@@ -50,13 +50,13 @@
 			<KeyWords name="AliasKeywords"
 					  bold="false"
 					  italic="false"
-					  color="Maroon">
+					  color="Blue">
 				<Key word="AS" />
 			</KeyWords>
 			<KeyWords name="ComparisonKeywords"
 					  bold="true"
 					  italic="false"
-					  color="Navy">
+					  color="Gray">
 				<Key word="AND" />
 				<Key word="OR" />
 				<Key word="LIKE" />
@@ -68,7 +68,7 @@
 				<Key word="LIMIT" />	
 			</KeyWords>
 			<KeyWords name="DestructiveKeywords"
-					  bold="true"
+					  bold="false"
 					  italic="false"
 					  color="Blue">
 				<Key word="DROP" />
@@ -79,8 +79,6 @@
 					  bold="true"
 					  italic="false"
 					  color="Blue">							
-				<Key word="CREATE" />	
-				<Key word="VIEW" />
 			</KeyWords>
 			<KeyWords name="SqlKeywordsNormal"
 					  bold="false"
@@ -101,13 +99,13 @@
 				<Key word="BETWEEN" />
 				<Key word="BY" />
 				<Key word="CASCADE" />
-				<Key word="CASE" />
-				<Key word="CAST" />
+				<Key word="CASE" />				
 				<Key word="CHECK" />
 				<Key word="COLLATE" />
 				<Key word="COLUMN" />
 				<Key word="CONFLICT" />
 				<Key word="CONSTRAINT" />
+				<Key word="CREATE" />
 				<Key word="CROSS" />
 				<Key word="CURRENT" />
 				<Key word="CURRENT_DATE" />
@@ -129,16 +127,14 @@
 				<Key word="EXCLUSIVE" />
 				<Key word="EXISTS" />
 				<Key word="EXPLAIN" />
-				<Key word="FAIL" />
-				<Key word="FILTER" />
+				<Key word="FAIL" />			
 				<Key word="FIRST" />
 				<Key word="FOLLOWING" />
 				<Key word="FOR" />
 				<Key word="FOREIGN" />
 				<Key word="FROM" />
 				<Key word="FULL" />
-				<Key word="GENERATED" />
-				<Key word="GLOB" />
+				<Key word="GENERATED" />			
 				<Key word="GROUP" />
 				<Key word="GROUPS" />
 				<Key word="HAVING" />
@@ -184,8 +180,7 @@
 				<Key word="REGEXP" />
 				<Key word="REINDEX" />
 				<Key word="RELEASE" />
-				<Key word="RENAME" />
-				<Key word="REPLACE" />
+				<Key word="RENAME" />				
 				<Key word="RESTRICT" />
 				<Key word="RETURNING" />
 				<Key word="ROW" />
@@ -206,10 +201,10 @@
 				<Key word="USING" />
 				<Key word="VACUUM" />
 				<Key word="VALUES" />
+				<Key word="VIEW" />
 				<Key word="VIRTUAL" />
 				<Key word="WHEN" />
-				<Key word="WHERE" />
-				<Key word="WINDOW" />
+				<Key word="WHERE" />			
 				<Key word="WITH" />
 				<Key word="WITHOUT" />
 			</KeyWords>

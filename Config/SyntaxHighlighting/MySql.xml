@@ -50,7 +50,7 @@
 			<KeyWords name="AliasKeywords"
 					  bold="false"
 					  italic="false"
-					  color="Maroon">
+					  color="Blue">
 				<Key word="AS" />
 			</KeyWords>
 			<KeyWords name="ComparisonKeywords"
@@ -68,7 +68,7 @@
 				<Key word="LIMIT" />
 			</KeyWords>
 			<KeyWords name="DestructiveKeywords"
-					  bold="true"
+					  bold="false"
 					  italic="false"
 					  color="Blue">
 				<Key word="DROP" />
@@ -78,16 +78,7 @@
 			<KeyWords name="SqlKeywordsBold"
 					  bold="true"
 					  italic="false"
-					  color="Blue">
-				<Key word="BEGIN" />
-				<Key word="END" />
-				<Key word="CREATE" />
-				<Key word="COMMIT" />
-				<Key word="ROLLBACK" />
-				<Key word="TRANSACTION" />
-				<Key word="USE" />
-				<Key word="USER" />
-				<Key word="VIEW" />
+					  color="Blue">				
 			</KeyWords>
 			<KeyWords name="SqlKeywordsNormal"
 					  bold="false"
@@ -159,6 +150,7 @@
 				<Key word="COLUMN_NAME" />
 				<Key word="COLUMNS" />
 				<Key word="COMMENT" />
+				<Key word="COMMIT" />
 				<Key word="COMMITTED" />
 				<Key word="COMPACT" />
 				<Key word="COMPLETION" />
@@ -176,12 +168,12 @@
 				<Key word="CONTEXT" />
 				<Key word="CONTINUE" />				
 				<Key word="CPU" />
+				<Key word="CREATE" />
 				<Key word="CROSS" />
 				<Key word="CUBE" />
 				<Key word="CURRENT" />
 				<Key word="CURRENT_DATE" />
-				<Key word="CURRENT_TIME" />
-				<Key word="CURRENT_TIMESTAMP" />
+				<Key word="CURRENT_TIME" />			
 				<Key word="CURRENT_USER" />
 				<Key word="CURSOR" />
 				<Key word="CURSOR_NAME" />
@@ -205,8 +197,7 @@
 				<Key word="DEFINER" />
 				<Key word="DELAY_KEY_WRITE" />
 				<Key word="DELAYED" />
-				<Key word="DELETE" />
-				<Key word="DES_KEY_FILE" />
+				<Key word="DELETE" />			
 				<Key word="DESC" />
 				<Key word="DESCRIBE" />
 				<Key word="DETERMINISTIC" />
@@ -313,8 +304,7 @@
 				<Key word="INSERT" />
 				<Key word="INSERT_METHOD" />
 				<Key word="INSTALL" />
-				<Key word="INSTANCE" />
-				<Key word="INT" />
+				<Key word="INSTANCE" />				
 				<Key word="INT1" />
 				<Key word="INT2" />
 				<Key word="INT3" />
@@ -390,8 +380,7 @@
 				<Key word="MAX_CONNECTIONS_PER_HOUR" />
 				<Key word="MAX_QUERIES_PER_HOUR" />
 				<Key word="MAX_ROWS" />
-				<Key word="MAX_SIZE" />
-				<Key word="MAX_STATEMENT_TIME" />
+				<Key word="MAX_SIZE" />			
 				<Key word="MAX_UPDATES_PER_HOUR" />
 				<Key word="MAX_USER_CONNECTIONS" />
 				<Key word="MAXVALUE" />
@@ -432,16 +421,14 @@
 				<Key word="NO" />
 				<Key word="NO_WAIT" />
 				<Key word="NO_WRITE_TO_BINLOG" />
-				<Key word="NODEGROUP" />
-				<Key word="NONBLOCKING" />
+				<Key word="NODEGROUP" />			
 				<Key word="NONE" />
 				<Key word="NOT" />
 				<Key word="NULL" />
 				<Key word="NUMBER" />
 				<Key word="NUMERIC" />
 				<Key word="NVARCHAR" />
-				<Key word="OFFSET" />
-				<Key word="OLD_PASSWORD" />
+				<Key word="OFFSET" />				
 				<Key word="ON" />
 				<Key word="ONE" />
 				<Key word="ONLY" />
@@ -457,8 +444,7 @@
 				<Key word="OUTFILE" />
 				<Key word="OWNER" />
 				<Key word="PACK_KEYS" />
-				<Key word="PAGE" />
-				<Key word="PARSE_GCOL_EXPR" />
+				<Key word="PAGE" />				
 				<Key word="PARSER" />
 				<Key word="PARTIAL" />
 				<Key word="PARTITION" />
@@ -496,8 +482,7 @@
 				<Key word="REAL" />
 				<Key word="REBUILD" />
 				<Key word="RECOVER" />
-				<Key word="REDO_BUFFER_SIZE" />
-				<Key word="REDOFILE" />
+				<Key word="REDO_BUFFER_SIZE" />			
 				<Key word="REDUNDANT" />
 				<Key word="REFERENCES" />
 				<Key word="REGEXP" />
@@ -536,6 +521,7 @@
 				<Key word="REVOKE" />
 				<Key word="RLIKE" />
 				<Key word="ROLLUP" />
+				<Key word="ROLLBACK" />
 				<Key word="ROTATE" />
 				<Key word="ROUTINE" />
 				<Key word="ROW" />
@@ -640,6 +626,7 @@
 				<Key word="TINYTEXT" />
 				<Key word="TO" />
 				<Key word="TRAILING" />
+				<Key word="TRANSACTION" />
 				<Key word="TRIGGER" />
 				<Key word="TRIGGERS" />
 				<Key word="TRUE" />
@@ -661,7 +648,8 @@
 				<Key word="UPGRADE" />
 				<Key word="USAGE" />
 				<Key word="USE" />
-				<Key word="USE_FRM" />
+				<Key word="USE_FRM" />			
+				<Key word="USER" />			
 				<Key word="USER" />
 				<Key word="USER_RESOURCES" />
 				<Key word="USING" />
@@ -676,6 +664,7 @@
 				<Key word="VARCHARACTER" />
 				<Key word="VARIABLES" />
 				<Key word="VARYING" />
+				<Key word="VIEW" />
 				<Key word="VIRTUAL" />
 				<Key word="WAIT" />
 				<Key word="WARNINGS" />
@@ -723,6 +712,7 @@
 				<Key word="COT" />
 				<Key word="COUNT" />
 				<Key word="CURDATE" />
+				<Key word="CURRENT_TIMESTAMP" />
 				<Key word="CURTIME" />
 				<Key word="DATE_ADD" />
 				<Key word="DATE_FORMAT" />

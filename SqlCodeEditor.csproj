@@ -5,12 +5,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.9</AssemblyVersion>
-    <FileVersion>1.0.9</FileVersion>
-    <Version>1.0.9</Version>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
+    <Version>2.0.0</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
-    <Description>sql syntax highlighting</Description>
+    <Description>Change config file from assembly resource to content file.</Description>
     <PackageProjectUrl>https://github.com/victor-wiki/SqlCodeEditor</PackageProjectUrl>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
@@ -34,38 +34,46 @@
 
   <ItemGroup>
     <None Remove=".gitignore" />
+    <None Remove="Config\SyntaxHighlighting\Mode.xsd" />
     <None Remove="Resources\Function.png" />
     <None Remove="Resources\Function_Trigger.png" />
     <None Remove="Resources\Keyword.png" />
-    <None Remove="Resources\Mode.xsd" />
-    <None Remove="Resources\MySql-Mode.xshd" />
-    <None Remove="Resources\PlSql-Mode.xshd" />
-    <None Remove="Resources\PostgreSql-Mode.xshd" />
     <None Remove="Resources\Schema.png" />
-    <None Remove="Resources\SqliteSql-Mode.xshd" />
-    <None Remove="Resources\SyntaxModes.xml" />
     <None Remove="Resources\Table.png" />
     <None Remove="Resources\TableColumn.png" />
     <None Remove="Resources\TextEditorControl.bmp" />
-    <None Remove="Resources\TSql-Mode.xshd" />
     <None Remove="Resources\View.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Config\SyntaxHighlighting\Mode.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\SyntaxModes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\MySql.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\PlSql.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\PostgreSql.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\SqliteSql.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\TSql.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Resources\Function.png" />
     <EmbeddedResource Include="Resources\Function_Trigger.png" />
     <EmbeddedResource Include="Resources\Keyword.png" />
-    <EmbeddedResource Include="Resources\Mode.xsd" />
-    <EmbeddedResource Include="Resources\PlSql-Mode.xshd" />
-    <EmbeddedResource Include="Resources\SqliteSql-Mode.xshd" />
     <EmbeddedResource Include="Resources\Schema.png" />
     <EmbeddedResource Include="Resources\Table.png" />
     <EmbeddedResource Include="Resources\TableColumn.png" />
     <EmbeddedResource Include="Resources\TextEditorControl.bmp" />
-    <EmbeddedResource Include="Resources\MySql-Mode.xshd" />
-    <EmbeddedResource Include="Resources\PostgreSql-Mode.xshd" />
-    <EmbeddedResource Include="Resources\TSql-Mode.xshd" />
-    <EmbeddedResource Include="Resources\SyntaxModes.xml" />
     <EmbeddedResource Include="Resources\View.png" />
   </ItemGroup>
 

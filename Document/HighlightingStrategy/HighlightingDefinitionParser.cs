@@ -5,6 +5,7 @@
 //     <version>$Revision$</version>
 // </file>
 
+using SqlCodeEditor.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,15 +32,33 @@ namespace SqlCodeEditor.Document
 			try {
 				List<ValidationEventArgs> errors = null;
 				XmlReaderSettings settings = new XmlReaderSettings();
-				Stream shemaStream = typeof(HighlightingDefinitionParser).Assembly.GetManifestResourceStream("SqlCodeEditor.Resources.Mode.xsd");
-				settings.Schemas.Add("", new XmlTextReader(shemaStream));
-				settings.Schemas.ValidationEventHandler += delegate(object sender, ValidationEventArgs args) {
-					if (errors == null) {
-						errors = new List<ValidationEventArgs>();
-					}
-					errors.Add(args);
-				};
-				settings.ValidationType = ValidationType.Schema;
+
+				string configFolder = PathHelper.GetSyntaxHighlightingConfigFolder();
+
+				string fileName = "Mode.xsd";
+
+				string filePath = Path.Combine(configFolder, fileName);
+
+                if (!File.Exists(filePath))
+                {
+                    throw new FileNotFoundException($@"""{fileName}"" is not found in folder ""{configFolder}"".");
+                }
+
+				using (Stream shemaStream = File.OpenRead(filePath))
+				{
+					settings.Schemas.Add("", new XmlTextReader(shemaStream));					
+				}
+
+                settings.Schemas.ValidationEventHandler += delegate (object sender, ValidationEventArgs args)
+                {
+                    if (errors == null)
+                    {
+                        errors = new List<ValidationEventArgs>();
+                    }
+                    errors.Add(args);
+                };
+
+                settings.ValidationType = ValidationType.Schema;
 				XmlReader validatingReader = XmlReader.Create(xmlReader, settings);
 
 				XmlDocument doc = new XmlDocument();

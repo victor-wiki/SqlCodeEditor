@@ -5,6 +5,7 @@
 //     <version>$Revision$</version>
 // </file>
 
+using SqlCodeEditor.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,22 +23,48 @@ namespace SqlCodeEditor.Document
 				return syntaxModes;
 			}
 		}
-		
-		public ResourceSyntaxModeProvider()
+       
+
+        public ResourceSyntaxModeProvider()
 		{
-			Assembly assembly = typeof(SyntaxMode).Assembly;
-			Stream syntaxModeStream = assembly.GetManifestResourceStream("SqlCodeEditor.Resources.SyntaxModes.xml");
-			if (syntaxModeStream != null) {
-				syntaxModes = SyntaxMode.GetSyntaxModes(syntaxModeStream);
-			} else {
-				syntaxModes = new List<SyntaxMode>();
+			string configFolder = PathHelper.GetSyntaxHighlightingConfigFolder();
+
+			string fileName = "SyntaxModes.xml";
+
+			string filePath = Path.Combine(configFolder, fileName);
+
+			if(!File.Exists(filePath))
+			{
+				throw new FileNotFoundException($@"""{fileName}"" is not found in folder ""{configFolder}"".");
 			}
+
+			using (Stream syntaxModeStream = File.OpenRead(filePath))
+			{
+                if (syntaxModeStream != null)
+                {
+                    syntaxModes = SyntaxMode.GetSyntaxModes(syntaxModeStream);
+                }
+                else
+                {
+                    syntaxModes = new List<SyntaxMode>();
+                }
+            }				
 		}
 		
 		public XmlTextReader GetSyntaxModeFile(SyntaxMode syntaxMode)
 		{
-			Assembly assembly = typeof(SyntaxMode).Assembly;
-			return new XmlTextReader(assembly.GetManifestResourceStream("SqlCodeEditor.Resources." + syntaxMode.FileName));
+            string configFolder = PathHelper.GetSyntaxHighlightingConfigFolder();
+
+			string fileName = syntaxMode.FileName;
+
+            string filePath = Path.Combine(configFolder, fileName);
+
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException($@"""{fileName}"" is not found in folder ""{configFolder}"".");
+            }
+           
+			return new XmlTextReader(filePath);
 		}
 		
 		public void UpdateSyntaxModeList()
