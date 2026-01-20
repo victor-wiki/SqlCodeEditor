@@ -5,17 +5,17 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>2.0.0</AssemblyVersion>
-    <FileVersion>2.0.0</FileVersion>
-    <Version>2.0.0</Version>
+    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <FileVersion>2.0.1</FileVersion>
+    <Version>2.0.1</Version>
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
-    <Description>Change config file from assembly resource to content file.</Description>
+    <Description>SQL syntax highlighting.</Description>
     <PackageProjectUrl>https://github.com/victor-wiki/SqlCodeEditor</PackageProjectUrl>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
     <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
-    <PackageReleaseNotes>Add more keywords.</PackageReleaseNotes>
+    <PackageReleaseNotes>Change config file from assembly resource to content file.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,8 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove=".gitignore" />
-    <None Remove="Config\SyntaxHighlighting\Mode.xsd" />
+    <None Remove=".gitignore" />    
     <None Remove="Resources\Function.png" />
     <None Remove="Resources\Function_Trigger.png" />
     <None Remove="Resources\Keyword.png" />
@@ -48,25 +47,35 @@
   <ItemGroup>
     <Content Include="Config\SyntaxHighlighting\Mode.xsd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Config\SyntaxHighlighting\SyntaxModes.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
     <Content Include="Config\SyntaxHighlighting\MySql.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
     <Content Include="Config\SyntaxHighlighting\PlSql.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
     <Content Include="Config\SyntaxHighlighting\PostgreSql.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
     <Content Include="Config\SyntaxHighlighting\SqliteSql.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+    <Content Include="Config\SyntaxHighlighting\SyntaxModes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
     <Content Include="Config\SyntaxHighlighting\TSql.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>	
     <EmbeddedResource Include="Resources\Function.png" />
     <EmbeddedResource Include="Resources\Function_Trigger.png" />
     <EmbeddedResource Include="Resources\Keyword.png" />
@@ -101,6 +110,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
+  </ItemGroup>  
 
 </Project>
