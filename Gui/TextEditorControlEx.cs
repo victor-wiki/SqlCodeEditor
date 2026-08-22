@@ -145,6 +145,8 @@ namespace SqlCodeEditor
 
         private string _foldingStrategy;
         [Category("Appearance")]
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         [Description("Set the Folding Strategy. Supported : XML and CSharp.")]
         public string FoldingStrategy
         {
@@ -163,7 +165,9 @@ namespace SqlCodeEditor
         }
 
         private string _syntaxHighlighting;
-        [Category("Appearance")]
+        [Category("Appearance")]     
+        [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         [Description("Sets the Syntax Highlighting.")]
         public string SyntaxHighlighting
         {

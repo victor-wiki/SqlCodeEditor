@@ -6,6 +6,7 @@
 // </file>
 
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -20,8 +21,10 @@ namespace SqlCodeEditor.Gui.CompletionWindow
 		int               firstItem    = 0;
 		int               selectedItem = -1;
 		ImageList         imageList;
-		
-		public ImageList ImageList {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public ImageList ImageList {
 			get {
 				return imageList;
 			}
@@ -29,8 +32,10 @@ namespace SqlCodeEditor.Gui.CompletionWindow
 				imageList = value;
 			}
 		}
-		
-		public int FirstItem {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public int FirstItem {
 			get {
 				return firstItem;
 			}

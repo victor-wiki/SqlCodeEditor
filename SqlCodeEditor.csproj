@@ -11,11 +11,11 @@
     <PackageId>SqlCodeEditor</PackageId>
     <Authors>victor-wiki</Authors>
     <Description>SQL syntax highlighting.</Description>
-    <PackageProjectUrl>https://github.com/victor-wiki/SqlCodeEditor</PackageProjectUrl>
+    <PackageProjectUrl></PackageProjectUrl>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <Title>SqlCodeEditor</Title>
-    <PackageReadmeFile>SqlCodeEditor.md</PackageReadmeFile>
     <PackageReleaseNotes>Upgrade to .Net10.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/victor-wiki/SqlCodeEditor</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -99,6 +99,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="license.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>  
 
 </Project>

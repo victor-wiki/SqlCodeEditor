@@ -5,11 +5,11 @@
 //     <version>$Revision$</version>
 // </file>
 
+using SqlCodeEditor.Util;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-
-using SqlCodeEditor.Util;
 
 namespace SqlCodeEditor.Gui.CompletionWindow
 {
@@ -27,8 +27,10 @@ namespace SqlCodeEditor.Gui.CompletionWindow
 	{
 		string description = string.Empty;
 		bool fixedWidth;
-		
-		public string Description {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public string Description {
 			get {
 				return description;
 			}
@@ -42,8 +44,10 @@ namespace SqlCodeEditor.Gui.CompletionWindow
 				}
 			}
 		}
-		
-		public bool FixedWidth {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public bool FixedWidth {
 			get {
 				return fixedWidth;
 			}

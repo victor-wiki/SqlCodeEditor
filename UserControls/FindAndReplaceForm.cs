@@ -1,10 +1,11 @@
-﻿using System;
+﻿using SqlCodeEditor.Document;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using SqlCodeEditor.Document;
 
 namespace SqlCodeEditor.UserControls
 {
@@ -70,6 +71,8 @@ namespace SqlCodeEditor.UserControls
             txtLookFor.Focus();
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ReplaceMode
         {
             get { return txtReplaceWith.Visible; }

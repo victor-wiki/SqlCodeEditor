@@ -76,8 +76,10 @@ namespace SqlCodeEditor
 				return hScrollBar;
 			}
 		}
-		
-		public bool DoHandleMousewheel {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public bool DoHandleMousewheel {
 			get {
 				return doHandleMousewheel;
 			}

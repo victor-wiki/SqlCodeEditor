@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace SqlCodeEditor.UserControls
@@ -102,6 +103,8 @@ namespace SqlCodeEditor.UserControls
         /// Gets or sets the code to format.
         /// </summary>
         /// <value>The code to format.</value>
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string CodeToFormat { get; set; }
 
     }

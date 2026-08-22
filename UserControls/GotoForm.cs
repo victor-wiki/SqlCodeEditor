@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.ComponentModel;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace SqlCodeEditor.UserControls
@@ -6,6 +7,9 @@ namespace SqlCodeEditor.UserControls
     public partial class GotoForm : Form
     {
         private int _firstLineNumber;
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int FirstLineNumber
         {
             get { return _firstLineNumber; }
@@ -17,6 +21,8 @@ namespace SqlCodeEditor.UserControls
         }
 
         private int _lastLineNumber;
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int LastLineNumber
         {
             get { return _lastLineNumber; }
@@ -27,6 +33,8 @@ namespace SqlCodeEditor.UserControls
             }
         }
 
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedLineNumber
         {
             get

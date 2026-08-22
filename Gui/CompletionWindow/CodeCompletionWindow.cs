@@ -5,12 +5,13 @@
 //     <version>$Revision$</version>
 // </file>
 
-using System;
-using System.Drawing;
-using System.Diagnostics;
-using System.Windows.Forms;
 using SqlCodeEditor.Document;
 using SqlCodeEditor.Models;
+using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace SqlCodeEditor.Gui.CompletionWindow
 {
@@ -232,13 +233,15 @@ namespace SqlCodeEditor.Gui.CompletionWindow
 				}
 			}
 		}
-		
-		/// <summary>
-		/// When this flag is set, code completion closes if the caret moves to the
-		/// beginning of the allowed range. This is useful in Ctrl+Space and "complete when typing",
-		/// but not in dot-completion.
-		/// </summary>
-		public bool CloseWhenCaretAtBeginning { get; set; }
+
+        /// <summary>
+        /// When this flag is set, code completion closes if the caret moves to the
+        /// beginning of the allowed range. This is useful in Ctrl+Space and "complete when typing",
+        /// but not in dot-completion.
+        /// </summary>
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public bool CloseWhenCaretAtBeginning { get; set; }
 		
 		protected override void CaretOffsetChanged(object sender, EventArgs e)
 		{

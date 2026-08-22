@@ -71,8 +71,9 @@ namespace SqlCodeEditor
 		/// The current file name
 		/// </value>
 		[Browsable(false)]
-		[ReadOnly(true)]
-		public string FileName {
+		[ReadOnly(true)]        
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public string FileName {
 			get {
 				return currentFileName;
 			}
@@ -134,12 +135,13 @@ namespace SqlCodeEditor
 			string[] descr = font.Split(new char[]{',', '='});
 			return new Font(descr[1], float.Parse(descr[3]));
 		}
-		
-		/// <value>
-		/// If set to true the contents can't be altered.
-		/// </value>
-		[Browsable(false)]
-		public bool IsReadOnly {
+
+        /// <value>
+        /// If set to true the contents can't be altered.
+        /// </value>
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public bool IsReadOnly {
 			get {
 				return Document.ReadOnly;
 			}

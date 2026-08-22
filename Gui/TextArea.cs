@@ -130,8 +130,10 @@ namespace SqlCodeEditor
 				return (Document.GetVisibleLine(Document.TotalNumberOfLines - 1) + 1 + TextView.VisibleLineCount * 2 / 3) * TextView.FontHeight;
 			}
 		}
-		
-		public Point VirtualTop {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public Point VirtualTop {
 			get {
 				return virtualTop;
 			}
@@ -145,8 +147,10 @@ namespace SqlCodeEditor
 				caret.UpdateCaretPosition();
 			}
 		}
-		
-		public bool AutoClearSelection {
+
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public bool AutoClearSelection {
 			get {
 				return autoClearSelection;
 			}
